@@ -23,4 +23,15 @@ body header div nav ol li a{}
 /*Selector de clase . ejemplo: .link*/
 
 
-/*Selector de id # ejemplo: #portafolio/
+/*Selector de id # ejemplo: #portafolio/*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
