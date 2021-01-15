@@ -11,29 +11,15 @@
 </head>
 
 <body>
-    <div class="flexbox">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
     <header class="header">
-        <div>
+        <div class="container">
             <figure class="logo">
-                <img src="images/logo.png" alt="Logo de http://meteosanchez.com">
+                <img src="images/logo.png" alt="Logo de http://meteosanchez.com" height="50px">
             </figure>
             <nav class="menu">
                 <ol>
                     <li>
-                        <a class="link" href="./portafolio/index.html">Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
                         <a class="link" href="#eventos">Experiencia</a>
@@ -46,49 +32,108 @@
         </div>
     </header>
     <section class="hero">
-        <h1>Hola! Soy <strong>Mateo Sanchez</strong>
-            <br>Desarrollador <strong>JavaScript</strong> con
-            <br> pasión por <strong>aprender</strong></h1>
-        <figure>
-            <!-- <img src="images/hero.jpg" width="500px" height="300px" alt="imagen principal del sito"> -->
-        </figure>
+        <div class="container">
+            <h1>Hola! Soy <strong>Mateo Sanchez</strong>
+                <br>Desarrollador <strong>JavaScript</strong> con
+                <br> pasión por <strong>aprender</strong></h1>
+            <figure>
+                <img class="heroImage" src="images/hero.jpg" alt="imagen principal del sito">
+            </figure>
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="projectDetails">
-                <h3 class="projectTitle">Platzi Video</h3>
-                <h6 class="projectCourse">React Native / React</h6>
-                <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2021</small></p>
-                <p class="projectUrl"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                <p class="projectDescription">Platzi video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, Este proyecto ha sido el ejemplo
-                    de futuros creadores de aplicaciones multiplataforma.
-                </p>
-            </div>
-            <figure class="projectImageContainer">
-                <img class="projectImage" src="images/platzi-video-react-native.png" width="500px" alt="proyecto del curso del react native">
-            </figure>
-        </article>
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="projectDetails">
+                    <h3 class="projectTitle">Platzi Video</h3>
+                    <h6 class="projectCourse">React Native / React</h6>
+                    <p class="projectDate"><small><strong>Fecha:</strong> 01/07/2021</small></p>
+                    <p class="projectUrl"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="projectDescription">Platzi video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, Este proyecto ha sido el ejemplo
+                        de futuros creadores de aplicaciones multiplataforma.
+                    </p>
+                </div>
+                <figure class="projectImageContainer">
+                    <img class="projectImage" src="images/platzi-video-react-native.png" width="500px" alt="proyecto del curso del react native">
+                </figure>
+            </article>
+        </div>
     </section>
-    <section id="eventos">
-        <h2>Más sobre mi Experiencia</h2>
-        <article class="event">
-            <figure class="eventImageContainer">
-                <img class="eventImage" src="images/platzi-conf.jpg" width="500px" alt="imagen de platzi conf">
-            </figure>
-            <h3 class="eventTitle">PlatziConf Mexico 2018</h3>
-            <p class="eventDescription">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida constante aprendizaje. </p>
-            <a class="eventUrl" href="https://www.youtube.com/watch?v=5tDrXDiSOD0&ab_channel=ArminvanBuuren" target="_blank">Ver Plática</a>
-        </article>
+    <div class="container">
+        <h2 class="eventListTitle">Más sobre mi Experiencia</h2>
+    </div>
+    <section id="eventos" class="eventList">
+        <div class="container">
+            <article class="event">
+                <figure class="eventImageContainer">
+                    <img class="eventImage" src="images/platzi-conf.jpg" width="500px" alt="imagen de platzi conf">
+                </figure>
+                <div class="eventDetail">
+                    <h3 class="eventTitle">PlatziConf Mexico 2018</h3>
+                    <p class="eventDescription">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida constante aprendizaje. </p>
+                    <a class="eventUrl" href="https://www.youtube.com/watch?v=5tDrXDiSOD0&ab_channel=ArminvanBuuren" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="eventImageContainer">
+                    <img class="eventImage" src="images/platzi-conf.jpg" width="500px" alt="imagen de platzi conf">
+                </figure>
+                <div class="eventDetail">
+                    <h3 class="eventTitle">PlatziConf Mexico 2018</h3>
+                    <p class="eventDescription">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida constante aprendizaje. </p>
+                    <a class="eventUrl" href="https://www.youtube.com/watch?v=5tDrXDiSOD0&ab_channel=ArminvanBuuren" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="eventImageContainer">
+                    <img class="eventImage" src="images/platzi-conf.jpg" width="500px" alt="imagen de platzi conf">
+                </figure>
+                <div class="eventDetail">
+                    <h3 class="eventTitle">PlatziConf Mexico 2018</h3>
+                    <p class="eventDescription">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida constante aprendizaje. </p>
+                    <a class="eventUrl" href="https://www.youtube.com/watch?v=5tDrXDiSOD0&ab_channel=ArminvanBuuren" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="eventImageContainer">
+                    <img class="eventImage" src="images/platzi-conf.jpg" width="500px" alt="imagen de platzi conf">
+                </figure>
+                <div class="eventDetail">
+                    <h3 class="eventTitle">PlatziConf Mexico 2018</h3>
+                    <p class="eventDescription">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida constante aprendizaje. </p>
+                    <a class="eventUrl" href="https://www.youtube.com/watch?v=5tDrXDiSOD0&ab_channel=ArminvanBuuren" target="_blank">Ver Plática</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="formEmail">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tú email" id="email">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/suscripcion/" class="formEmail">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tú email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/mateoyamith" class="socialLink twitter"></a>
+                <a href="https://www.facebook.com/mateoyamith/" class="socialLink facebook"></a>
+                <a href="https://github.com/mateoyamith" class="socialLink github"></a>
+                <a href="https://www.instagram.com/mateoyamith/" class="socialLink instagram"></a>
+            </div>
+        </div>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de desarrollo web online 2021 <img src="images/platzi.png" alt="platzi" width="80px"></p>
+            </div>
+            <div>
+                <p>Designed with
+                    <\3 by <a class="eventUrl" href="https://twitter.com/mateoyamith" target="_blank">@mateoyamith</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
