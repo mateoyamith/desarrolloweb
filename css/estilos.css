@@ -328,3 +328,30 @@ figure {
 .socialLink.instagram {
     background-image: url(../images/instagram.svg);
 }
+
+
+/*Desktop first que empieces desde el MQ más grande*/
+
+@media screen and (max-width:1024) {
+    body {
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        border: 10px solid green;
+    }
+}
