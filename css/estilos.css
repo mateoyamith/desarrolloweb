@@ -124,7 +124,7 @@ h2 {
 }
 
 .projectDetails {
-    width: 500px;
+    width: 50%;
 }
 
 .projectDescription {
@@ -136,7 +136,11 @@ h2 {
 }
 
 .projectImageContainer {
-    width: 500px;
+    width: 50%;
+}
+
+.projectImageContainer img {
+    max-width: 100%;
 }
 
 .header {
@@ -339,11 +343,7 @@ figure {
 
 /*Desktop first que empieces desde el MQ más grande*/
 
-@media screen and (max-width:1024px) {
-    body {
-        /* border: 10px solid green; */
-    }
-}
+@media screen and (max-width:1024px) {}
 
 @media screen and (max-width:767px) {
     .header {
@@ -362,16 +362,44 @@ figure {
     .header .logo {
         text-align: center;
     }
+    .project {
+        display: block;
+    }
+    .projectImageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .projectDetails {
+        width: auto;
+        /* font-size: 16px; */
+    }
+    .projectCourse,
+    .projectDescription,
+    .projectUrl {
+        margin: .3em 0;
+    }
+    .projectTitle {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .projectUrl {
+        font-size: 1em;
+    }
+    .projectCourse {
+        font-size: .7em;
+    }
+    .projectDate {
+        font-size: 1em;
+    }
+    .projectDescription {
+        font-size: .8em;
+    }
 }
 
 @media screen and (max-width:480px) {
-    body {
-        /* border: 10px solid green; */
+    .projectDetails {
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width:320px) {
-    body {
-        /* border: 10px solid green; */
-    }
-}
+@media screen and (max-width:320px) {}
