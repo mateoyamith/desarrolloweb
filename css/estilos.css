@@ -414,7 +414,10 @@ figure {
 
 /*Desktop first que empieces desde el MQ más grande*/
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
+    .eventListTitle {
+        margin-left: 0;
+    }
     .container {
         padding: 0 1em;
     }
@@ -440,6 +443,9 @@ figure {
 }
 
 @media screen and (max-width:767px) {
+    h2 {
+        font-size: 1.2em;
+    }
     .burgerButton {
         display: block;
     }
@@ -510,7 +516,7 @@ figure {
         font-size: 1em;
     }
     .projectDescription {
-        font-size: .8em;
+        font-size: 1em;
     }
     .event {
         width: auto;
@@ -526,7 +532,7 @@ figure {
         font-size: 1.5em;
     }
     .projectDetails {
-        font-size: 12px;
+        font-size: 14px;
     }
     .eventDetail {
         margin: -2em .5em .5em;
