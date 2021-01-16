@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <i class="icon-menu burgerButton"></i>
+    <i class="icon-menu burgerButton" id="burgerMenu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -147,6 +147,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burgerMenu');
+        burgerButton.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (menu.classList.contains('isActive')) {
+                menu.classList.remove('isActive');
+            } else {
+                menu.classList.add('isActive');
+            }
+        }
+    </script>
 </body>
 
 </html>
