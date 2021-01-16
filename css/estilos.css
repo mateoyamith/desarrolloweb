@@ -269,7 +269,6 @@ figure {
 }
 
 .eventUrl {
-    border: 1px solid;
     padding: 5px 20px;
     text-decoration: none;
     color: #056fff;
@@ -307,6 +306,7 @@ figure {
     border-radius: 5px;
     width: 100px;
     margin-top: 10px;
+    border: 1px solid;
     /* margin: 10px auto; */
 }
 
@@ -343,7 +343,11 @@ figure {
 
 /*Desktop first que empieces desde el MQ más grande*/
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 1em;
+    }
+}
 
 @media screen and (max-width:767px) {
     .header {
@@ -410,6 +414,23 @@ figure {
     .eventDetail {
         margin: -2em .5em .5em;
         padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    .formEmail button {
+        margin: 1em auto;
+    }
+    .formEmail h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
 
