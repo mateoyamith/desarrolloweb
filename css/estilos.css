@@ -88,6 +88,12 @@ h2 {
     padding: 20px;
 }
 
+.htmlVideo {
+    width: 100%;
+    height: auto;
+    /* max-width: 100%; */
+}
+
 .project {
     /* border-top: 10px solid red;
     border-right: 10px solid green;
